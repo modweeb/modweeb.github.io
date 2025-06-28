@@ -3,55 +3,47 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
+# لغة الموقع (مهم لـ RTL لاحقًا)
+lang: ar
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+# المنطقة الزمنية – اليمن
+timezone: Asia/Aden
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# إعدادات jekyll-seo-tag
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Modweeb Blog # العنوان الرئيسي
+tagline: شروحات تقنية، أدوات ذكية، حلول يمن نت، وقوالب بلوجر # العنوان الفرعي
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+description: >-
+  Modweeb is a professional Arabic tech blog offering Blogger templates, SEO tools, app reviews, YemenNet 4G solutions, and strategies for digital monetization.
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
+# رابط الموقع على GitHub Pages أو نطاقك المخصص (بدون / في النهاية)
 url: "https://modweeb.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: modweeb
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: modweeb
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Modweeb | مود ويب
+  email: contact@modweeb.com
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
-
-# Site Verification Settings
+    - https://twitter.com/modweeb
+    - https://github.com/modweeb
+    - https://modweeb.com
+    - https://t.me/modweeb
+    
+    # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+  google: "YOUR_GOOGLE_VERIFICATION_CODE"  # كود التحقق من أدوات مشرفي المواقع
+  bing: ""     # يمكنك تركه فارغًا أو إضافته لاحقًا
+  alexa: ""    # لم يعد يُستخدم كثيرًا
+  yandex: ""   # حسب الحاجة
+  baidu: ""    # للصين فقط غالبًا
+  facebook: "" # يمكنك إضافة Meta business verification لاحقًا
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -59,107 +51,75 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: "G-XXXXXXXXXX"  # ضع هنا معرف Google Analytics الخاص بك (GA4 أو UA)
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: ""  # غير ضروري إن كنت تستخدم Google
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id: ""
+    domain: ""
   matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
+    id: ""
+    domain: ""
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id: ""  # إذا كنت تستخدم إحصائيات Cloudflare Web Analytics
   fathom:
-    id: # fill in your Fathom Site ID
+    id: ""  # إذا كنت تستخدم Fathom analytics
 
 # Page views settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: "" # اتركه فارغًا أو استخدم goatcounter إن رغبت بإظهار عدد المشاهدات
 
 # Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
-#
-theme_mode: # [light | dark]
+theme_mode: dark  # أو light أو اتركه فارغًا للسماح بالتبديل بين الوضعين
 
 # The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-cdn:
+cdn: ""  # يمكنك تركه فارغًا لتجنّب تحميل الصور من مصدر خارجي
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "/assets/img/modweeb-avatar.png"  # ضع صورة الشعار الخاص بك داخل المجلد المحدد
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+social_preview_image: "/assets/img/og-cover.png"  # صورة تظهر عند مشاركة الرابط على وسائل التواصل
 
 # boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
-  disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
-  giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+  # تفعيل نظام التعليقات باستخدام Giscus المرتبط بمستودع GitHub الخاص بك
+  provider: giscus
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+  giscus:
+    repo: "modweeb/modweeb.github.io"    # غيّر إلى اسم المستودع الخاص بك
+    repo_id: "REPO_ID_HERE"               # استبدلها بالـ repo_id من إعدادات Giscus
+    category: "Announcements"             # اسم الكاتيجوري في Giscus (يمكنك تغييره)
+    category_id: "CATEGORY_ID_HERE"       # استبدلها بالـ category_id من Giscus
+    mapping: "pathname"                   # الطريقة التي يتم من خلالها الربط بين الصفحات والتعليقات
+    strict: false
+    input_position: "bottom"
+    lang: "ar"                           # لغة واجهة التعليقات (عربي)
+    reactions_enabled: true              # تفعيل ردود الفعل (الإيموجي)
+
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+    enabled: false    # لا تقم بتفعيل الاستضافة الذاتية إلا إذا لديك ملفات ثابتة خاصة
 
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: true      # تفعيل ميزة تطبيق الويب التقدمي PWA (يمكن تثبيته)
   cache:
-    enabled: true # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
-    deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+    enabled: true    # تفعيل الكاش للعمل بدون إنترنت
+    deny_paths: []
 
-paginate: 10
+paginate: 10         # عدد المقالات المعروضة في الصفحة الواحدة
 
-# The base URL of your site
-baseurl: ""
+baseurl: ""          # اتركها فارغة إذا كنت تستخدم root domain أو GitHub Pages بشكل مباشر
 
-# ------------ The following options are not recommended to be modified ------------------
+# -------------- خيارات متقدمة لا يُنصح بتعديلها ----------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
-    # default_lang: console
     span:
       line_numbers: false
     block:
@@ -173,14 +133,12 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true
+      toc: true
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -188,7 +146,7 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs
     values:
       layout: page
       permalink: /:title/
