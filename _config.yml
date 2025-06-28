@@ -6,19 +6,19 @@ theme: jekyll-theme-chirpy
 # لغة الموقع (مهم لـ RTL لاحقًا)
 lang: ar
 
-# المنطقة الزمنية – اليمن
+# المنطقة الزمنية - اليمن
 timezone: Asia/Aden
 
 # إعدادات jekyll-seo-tag
 # ↓ --------------------------
 
-title: Modweeb Blog # العنوان الرئيسي
-tagline: شروحات تقنية، أدوات ذكية، حلول يمن نت، وقوالب بلوجر # العنوان الفرعي
+title: Modweeb Blog
+tagline: شروحات تقنية، أدوات ذكية، حلول يمن نت، وقوالب بلوجر
 
 description: >-
   Modweeb is a professional Arabic tech blog offering Blogger templates, SEO tools, app reviews, YemenNet 4G solutions, and strategies for digital monetization.
 
-# رابط الموقع على GitHub Pages أو نطاقك المخصص (بدون / في النهاية)
+# رابط الموقع
 url: "https://modweeb.github.io"
 
 github:
@@ -35,25 +35,22 @@ social:
     - https://github.com/modweeb
     - https://modweeb.com
     - https://t.me/modweeb
-    
-    # Site Verification Settings
-webmaster_verifications:
-  google: "YOUR_GOOGLE_VERIFICATION_CODE"  # كود التحقق من أدوات مشرفي المواقع
-  bing: ""     # يمكنك تركه فارغًا أو إضافته لاحقًا
-  alexa: ""    # لم يعد يُستخدم كثيرًا
-  yandex: ""   # حسب الحاجة
-  baidu: ""    # للصين فقط غالبًا
-  facebook: "" # يمكنك إضافة Meta business verification لاحقًا
 
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# Site Verification Settings
+webmaster_verifications:
+  google: "YOUR_GOOGLE_VERIFICATION_CODE"
+  bing: ""
+  alexa: ""
+  yandex: ""
+  baidu: ""
+  facebook: ""
 
 # Web Analytics Settings
 analytics:
   google:
-    id: "G-XXXXXXXXXX"  # ضع هنا معرف Google Analytics الخاص بك (GA4 أو UA)
+    id: "G-XXXXXXXXXX"
   goatcounter:
-    id: ""  # غير ضروري إن كنت تستخدم Google
+    id: ""
   umami:
     id: ""
     domain: ""
@@ -61,60 +58,57 @@ analytics:
     id: ""
     domain: ""
   cloudflare:
-    id: ""  # إذا كنت تستخدم إحصائيات Cloudflare Web Analytics
+    id: ""
   fathom:
-    id: ""  # إذا كنت تستخدم Fathom analytics
+    id: ""
 
 # Page views settings
 pageviews:
-  provider: "" # اتركه فارغًا أو استخدم goatcounter إن رغبت بإظهار عدد المشاهدات
+  provider: ""
 
 # Prefer color scheme setting.
-theme_mode: dark  # أو light أو اتركه فارغًا للسماح بالتبديل بين الوضعين
+theme_mode: dark
 
 # The CDN endpoint for media resources.
-cdn: ""  # يمكنك تركه فارغًا لتجنّب تحميل الصور من مصدر خارجي
+cdn: ""
 
-# the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/modweeb-avatar.png"  # ضع صورة الشعار الخاص بك داخل المجلد المحدد
+# the avatar on sidebar
+avatar: "/assets/img/modweeb-avatar.png"
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-social_preview_image: "/assets/img/og-cover.png"  # صورة تظهر عند مشاركة الرابط على وسائل التواصل
+# Social preview image
+social_preview_image: "/assets/img/og-cover.png"
 
-# boolean type, the global switch for TOC in posts.
+# Table of Contents in posts
 toc: true
 
 comments:
-  # تفعيل نظام التعليقات باستخدام Giscus المرتبط بمستودع GitHub الخاص بك
   provider: giscus
-
   giscus:
-    repo: "modweeb/modweeb.github.io"    # غيّر إلى اسم المستودع الخاص بك
-    repo_id: "REPO_ID_HERE"               # استبدلها بالـ repo_id من إعدادات Giscus
-    category: "Announcements"             # اسم الكاتيجوري في Giscus (يمكنك تغييره)
-    category_id: "CATEGORY_ID_HERE"       # استبدلها بالـ category_id من Giscus
-    mapping: "pathname"                   # الطريقة التي يتم من خلالها الربط بين الصفحات والتعليقات
+    repo: "modweeb/modweeb.github.io"
+    repo_id: "REPO_ID_HERE"
+    category: "Announcements"
+    category_id: "CATEGORY_ID_HERE"
+    mapping: "pathname"
     strict: false
     input_position: "bottom"
-    lang: "ar"                           # لغة واجهة التعليقات (عربي)
-    reactions_enabled: true              # تفعيل ردود الفعل (الإيموجي)
+    lang: "ar"
+    reactions_enabled: true
 
-# _config.yml
 assets:
   self_host:
-    enabled: true
+    enabled: false
 
 pwa:
-  enabled: true      # تفعيل ميزة تطبيق الويب التقدمي PWA (يمكن تثبيته)
+  enabled: true
   cache:
-    enabled: true    # تفعيل الكاش للعمل بدون إنترنت
+    enabled: true
     deny_paths: []
 
-paginate: 10         # عدد المقالات المعروضة في الصفحة الواحدة
+paginate: 10
 
-baseurl: ""          # اتركها فارغة إذا كنت تستخدم root domain أو GitHub Pages بشكل مباشر
+baseurl: ""
 
-# -------------- خيارات متقدمة لا يُنصح بتعديلها ----------------
+# ------------ Advanced Settings (Not Recommended to Modify) -------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
