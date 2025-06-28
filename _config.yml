@@ -99,9 +99,10 @@ comments:
     lang: "ar"                           # لغة واجهة التعليقات (عربي)
     reactions_enabled: true              # تفعيل ردود الفعل (الإيموجي)
 
+# _config.yml
 assets:
   self_host:
-    enabled: false    # لا تقم بتفعيل الاستضافة الذاتية إلا إذا لديك ملفات ثابتة خاصة
+    enabled: true
 
 pwa:
   enabled: true      # تفعيل ميزة تطبيق الويب التقدمي PWA (يمكن تثبيته)
