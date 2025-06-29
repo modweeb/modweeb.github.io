@@ -3,22 +3,21 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# لغة الموقع (مهم لـ RTL لاحقًا)
+# اللغة الافتراضية للموقع
 lang: ar
 
-# المنطقة الزمنية - اليمن
+# المنطقة الزمنية
 timezone: Asia/Aden
 
 # إعدادات jekyll-seo-tag
 # ↓ --------------------------
 
-title: مدونة مود ويب
-tagline: شروحات تقنية، أدوات ذكية، حلول يمن نت، وقوالب بلوجر
-
+title: مدونة: مود ويب
+tagline: مدونة تقنية لإثراء المحتوى العربي
 description: >-
-  Modweeb is a professional Arabic tech blog offering Blogger templates, SEO tools, app reviews, YemenNet 4G solutions, and strategies for digital monetization.
+  مدونة تقنية تقدم شروحات وأدوات مجانية، وتركز على تطوير المحتوى التقني، أدوات الإنتاجية، مراجعات التطبيقات، تحسين المواقع، وتجربة المستخدم.
 
-# رابط الموقع
+# رابط موقعك الرسمي
 url: "https://modweeb.github.io"
 
 github:
@@ -28,87 +27,95 @@ twitter:
   username: modweeb
 
 social:
-  name: Modweeb | مود ويب
+  name: Modweeb - مود ويب
   email: contact@modweeb.com
   links:
     - https://twitter.com/modweeb
     - https://github.com/modweeb
-    - https://modweeb.com
-    - https://t.me/modweeb
+    - https://www.facebook.com/modweeb
+    - https://www.linkedin.com/in/modweeb
 
-# Site Verification Settings
+# إعدادات التحقق لمحركات البحث
 webmaster_verifications:
-  google: "YOUR_GOOGLE_VERIFICATION_CODE"
-  bing: ""
-  alexa: ""
-  yandex: ""
-  baidu: ""
-  facebook: ""
+  google: YOUR_GOOGLE_VERIFICATION_CODE
+  bing: YOUR_BING_VERIFICATION_CODE
+  alexa: 
+  yandex: 
+  baidu: 
+  facebook: 
 
-# Web Analytics Settings
+# ↑ --------------------------
+# نهاية إعدادات jekyll-seo-tag
+
+# إعدادات تحليلات الزوار
 analytics:
   google:
-    id: "G-XXXXXXXXXX"
+    id: G-XXXXXXXXXX
   goatcounter:
-    id: ""
+    id: 
   umami:
-    id: ""
-    domain: ""
+    id: 
+    domain: 
   matomo:
-    id: ""
-    domain: ""
+    id: 
+    domain: 
   cloudflare:
-    id: ""
+    id: 
   fathom:
-    id: ""
+    id: 
 
-# Page views settings
+# عداد الزيارات
 pageviews:
-  provider: ""
+  provider: goatcounter
 
-# Prefer color scheme setting.
-theme_mode: light
+# إعداد المظهر الليلي أو الفاتح
+theme_mode: dark
 
-# The CDN endpoint for media resources.
-cdn: ""
+# CDN مخصص (اتركه فارغًا إن لم يكن لديك)
+cdn:
 
-# the avatar on sidebar
+# الصورة الرمزية في الشريط الجانبي (اختر واحدة فقط)
 avatar: "https://i.postimg.cc/v8xt8V5n/web-app-manifest-512x512.png"
 
-# Social preview image
-social_preview_image: "/assets/img/og-cover.png"
+# صورة المعاينة الاجتماعية
+social_preview_image: "https://i.postimg.cc/hG8bqpjm/modweeb-img-lo.jpg"
 
-# Table of Contents in posts
+# تفعيل جدول المحتويات تلقائيًا
 toc: true
 
+# إعدادات التعليقات
 comments:
   provider: giscus
   giscus:
-    repo: "modweeb/modweeb.github.io"
-    repo_id: "REPO_ID_HERE"
-    category: "Announcements"
-    category_id: "CATEGORY_ID_HERE"
-    mapping: "pathname"
-    strict: false
-    input_position: "bottom"
-    lang: "ar"
-    reactions_enabled: true
+    repo: modweeb/modweeb.github.io
+    repo_id: YOUR_REPO_ID
+    category: General
+    category_id: YOUR_CATEGORY_ID
+    mapping: pathname
+    input_position: bottom
+    lang: ar
+    reactions_enabled: 1
 
+# إعدادات الاستضافة الذاتية للملفات الثابتة
 assets:
   self_host:
     enabled: false
+    env:
 
+# تفعيل PWA (تطبيق ويب تقدمي)
 pwa:
   enabled: true
   cache:
     enabled: true
-    deny_paths: []
+    deny_paths:
 
+# عدد التدوينات في الصفحة الواحدة
 paginate: 10
 
+# قاعدة الموقع (فارغة لجيثب بيجز root)
 baseurl: ""
 
-# ------------ Advanced Settings (Not Recommended to Modify) -------------
+# ------------ الإعدادات المتقدمة (لا يُنصح بتعديلها) ------------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
