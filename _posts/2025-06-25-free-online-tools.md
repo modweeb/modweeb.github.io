@@ -4,12 +4,7 @@ date: 2025-06-25 10:00:00 +0300
 categories: [أدوات بلوجر, تحسين الأداء]
 tags: [أدوات مجانية, تحسين سيو, أدوات مود ويب, أدوات تقنية]
 description: اكتشف 12 أداة مجانية متكاملة لتحسين مدونتك من إنشاء ملفات تقنية إلى تحسين الصور وإنشاء محتوى تلقائي - كل ما تحتاجه في مكان واحد.
-image:
-  path: /assets/img/tools-banner.jpg
-  alt: أدوات مجانية لتحسين المدونة
-toc: true
 comments: true
-pin: true
 ---
 
 <div class="featured-box">
@@ -25,7 +20,7 @@ pin: true
 ## 🔗 [استكشف جميع الأدوات الآن](https://www.modweeb.com/p/tools.html){: .btn-download target="_blank"}
 
 ## 🛠️ تصنيف الأدوات المتوفرة
-
+---
 ### 🔧 أدوات السيو والتقنية
 
 <div class="tool-card">
@@ -43,7 +38,7 @@ pin: true
     <a href="https://www.modweeb.com/p/tags-tool.html" class="tool-link">جرب الأداة</a>
   </div>
 </div>
-
+---
 ### 🎨 أدوات التصميم والمحتوى
 
 <div class="tool-card">
@@ -61,12 +56,11 @@ pin: true
     <a href="https://www.modweeb.com/p/all-svg-icons-in-plus-ui-template.html" class="tool-link">جرب الأداة</a>
   </div>
 </div>
-
+---
 ### ⚡ أدوات الأداء والتحسين
 
 <div class="tool-card">
   <div class="tool">
-    <i class="fas fa-tachometer-alt"></i>
     <h3>قياس سرعة الإنترنت</h3>
     <p>فحص سرعة الاتصال الخاص بك مع نصائح لتحسين الأداء</p>
     <a href="https://www.modweeb.com/p/internet-speed-tool.html" class="tool-link">جرب الأداة</a>
@@ -79,7 +73,7 @@ pin: true
     <a href="https://www.modweeb.com/p/webp-converter.html" class="tool-link">جرب الأداة</a>
   </div>
 </div>
-
+---
 ### 🖋️ أدوات المحتوى
 
 <div class="tool-card">
@@ -104,7 +98,7 @@ pin: true
     <a href="https://www.modweeb.com/p/templates-arabi-zer.html" class="tool-link">جرب الأداة</a>
   </div>
 </div>
-
+---
 ## 💎 أدوات إضافية مميزة
 
 <ul class="additional-tools">
@@ -115,7 +109,7 @@ pin: true
   <li><i class="fab fa-youtube"></i> <strong>مولد صور يوتيوب</strong> - إنشاء thumbnails جذابة للفيديوهات</li>
   <li><i class="fas fa-address-card"></i> <strong>مولد صفحة "من نحن"</strong> - تصميم صفحة احترافية عن المدونة</li>
 </ul>
-
+---
 ## 📊 لماذا تختار أدوات مود ويب؟
 
 <div class="comparison">
@@ -137,7 +131,7 @@ pin: true
     </ul>
   </div>
 </div>
-
+---
 ## 🚀 كيف تبدأ؟
 
 <ol class='steps'>
@@ -146,7 +140,7 @@ pin: true
   <li>اتبع التعليمات البسيطة</li>
   <li>انسخ النتائج واستخدمها مباشرة</li>
 </ol>
-
+---
 ## 📣 شاركنا رأيك
 
 <p class="cta-box">جربت إحدى أدواتنا؟ ساعدنا في التطوير عبر مشاركة تجربتك:</p>
@@ -159,3 +153,4 @@ pin: true
     <i class="fab fa-telegram"></i> انضم لقناتنا
   </a>
 </div>
+---
