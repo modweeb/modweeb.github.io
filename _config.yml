@@ -160,7 +160,7 @@ sass:
   style: compressed
   load_paths:
     - _sass
-    - node_modules/jekyll-theme-chirpy/sass
+    - node_modules
 
 compress_html:
   clippings: all
@@ -190,3 +190,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    
