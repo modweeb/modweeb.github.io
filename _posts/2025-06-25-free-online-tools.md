@@ -1,10 +1,15 @@
 ---
-title: "أدوات مود ويب المجانية الشاملة لتحسين مدونتك"
+title: أدوات مود ويب المجانية الشاملة لتحسين مدونتك
 date: 2025-06-25 10:00:00 +0300
 categories: [أدوات بلوجر, تحسين الأداء]
 tags: [أدوات مجانية, تحسين سيو, أدوات مود ويب, أدوات تقنية]
-author: فريق مود ويب
-excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدونتك من إنشاء ملفات تقنية إلى تحسين الصور وإنشاء محتوى تلقائي - كل ما تحتاجه في مكان واحد"
+description: اكتشف 12 أداة مجانية متكاملة لتحسين مدونتك من إنشاء ملفات تقنية إلى تحسين الصور وإنشاء محتوى تلقائي - كل ما تحتاجه في مكان واحد.
+image:
+  path: /assets/img/tools-banner.jpg
+  alt: أدوات مجانية لتحسين المدونة
+toc: true
+comments: true
+pin: true
 ---
 
 <div class="featured-box">
@@ -22,6 +27,7 @@ excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدو
 ## 🛠️ تصنيف الأدوات المتوفرة
 
 ### 🔧 أدوات السيو والتقنية
+
 <div class="tool-card">
   <div class="tool">
     <i class="fas fa-robot"></i>
@@ -39,6 +45,7 @@ excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدو
 </div>
 
 ### 🎨 أدوات التصميم والمحتوى
+
 <div class="tool-card">
   <div class="tool">
     <i class="fas fa-table"></i>
@@ -56,6 +63,7 @@ excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدو
 </div>
 
 ### ⚡ أدوات الأداء والتحسين
+
 <div class="tool-card">
   <div class="tool">
     <i class="fas fa-tachometer-alt"></i>
@@ -70,8 +78,10 @@ excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدو
     <p>تحسين صور المدونة مع الحفاظ على الجودة وتغيير الصيغ</p>
     <a href="https://www.modweeb.com/p/webp-converter.html" class="tool-link">جرب الأداة</a>
   </div>
-  
-  ### 🖋️ أدوات المحتوى
+</div>
+
+### 🖋️ أدوات المحتوى
+
 <div class="tool-card">
   <div class="tool">
     <i class="fas fa-link"></i>
@@ -96,6 +106,7 @@ excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدو
 </div>
 
 ## 💎 أدوات إضافية مميزة
+
 <ul class="additional-tools">
   <li><i class="fas fa-question-circle"></i> <strong>مولد الأسئلة الشائعة</strong> - إنشاء قسم FAQ بتنسيق HTML جاهز</li>
   <li><i class="fas fa-language"></i> <strong>أداة تعريب القوالب</strong> - ترجمة شاملة لقوالب بلوجر</li>
@@ -106,6 +117,7 @@ excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدو
 </ul>
 
 ## 📊 لماذا تختار أدوات مود ويب؟
+
 <div class="comparison">
   <div class="pros">
     <h3><i class="fas fa-check-circle"></i> المميزات</h3>
@@ -127,13 +139,18 @@ excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدو
 </div>
 
 ## 🚀 كيف تبدأ؟
-1. حدد المشكلة التي تواجهها
-2. اختر الأداة المناسبة من [صفحة الأدوات](https://www.modweeb.com/p/tools.html)
-3. اتبع التعليمات البسيطة
-4. انسخ النتائج واستخدمها مباشرة
+
+<ol class='steps'>
+  <li>حدد المشكلة التي تواجهها</li>
+  <li>اختر الأداة المناسبة من <a href="https://www.modweeb.com/p/tools.html" target="_blank">صفحة الأدوات</a></li>
+  <li>اتبع التعليمات البسيطة</li>
+  <li>انسخ النتائج واستخدمها مباشرة</li>
+</ol>
 
 ## 📣 شاركنا رأيك
+
 <p class="cta-box">جربت إحدى أدواتنا؟ ساعدنا في التطوير عبر مشاركة تجربتك:</p>
+
 <div class="social-cta">
   <a href="https://twitter.com/intent/tweet?text=جربت%20أدوات%20مود%20ويب%20المجانية%20وكانت%20رائعة%20👌%20https://www.modweeb.com/p/tools.html" class="twitter-share" target="_blank">
     <i class="fab fa-twitter"></i> غرد بتجربتك
@@ -142,87 +159,3 @@ excerpt: "اكتشف 12 أداة مجانية متكاملة لتحسين مدو
     <i class="fab fa-telegram"></i> انضم لقناتنا
   </a>
 </div>
-
-<style>
-.featured-box {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  color: white;
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.tool-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.tool {
-  background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid var(--link-hover-color);
-  transition: transform 0.3s;
-}
-
-.tool:hover {
-  transform: translateY(-5px);
-}
-
-.tool-link {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: var(--button-bg);
-  color: white !important;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-.additional-tools {
-  list-style: none;
-  padding-left: 0;
-  column-count: 2;
-}
-
-.additional-tools li {
-  margin-bottom: 1rem;
-  break-inside: avoid;
-}
-
-.comparison {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-.social-cta {
-  display: flex;
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.twitter-share {
-  background: #1DA1F2;
-  color: white !important;
-  padding: 0.8rem 1.5rem;
-  border-radius: 50px;
-}
-
-.telegram-cta {
-  background: #0088cc;
-  color: white !important;
-  padding: 0.8rem 1.5rem;
-  border-radius: 50px;
-}
-
-@media (max-width: 768px) {
-  .additional-tools {
-    column-count: 1;
-  }
-}
-</style>
