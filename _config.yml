@@ -6,6 +6,15 @@ theme: jekyll-theme-chirpy
 # لغة الموقع (مهم لـ RTL لاحقًا)
 lang: ar
 
+# the direction of the webpage
+#
+# Available options:
+#
+#     ltr — use left to right direction (default)
+#     rtl — use right to left direction
+#
+direction: rtl
+
 # المنطقة الزمنية - اليمن
 timezone: Asia/Aden
 
