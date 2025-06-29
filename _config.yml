@@ -73,7 +73,7 @@ theme_mode: dark
 cdn: ""
 
 # the avatar on sidebar
-avatar: "/assets/img/modweeb-avatar.png"
+avatar: "https://i.postimg.cc/v8xt8V5n/web-app-manifest-512x512.png"
 
 # Social preview image
 social_preview_image: "/assets/img/og-cover.png"
