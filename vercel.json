@@ -1,7 +1,0 @@
-{
-  "build": {
-    "env": {
-      "JEKYLL_ENV": "production"
-    }
-  }
-}
