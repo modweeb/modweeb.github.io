@@ -1,9 +1,21 @@
-- name: "الرئيسية"
-  url: "/"
-  
-- name: "أدوات SEO"
-  url: "/tools/seo-url/"  # المسار الصحيح
-  icon: "fas fa-link"     # أيقونة اختيارية
-
-- name: "المدونة"
-  url: "/blog/"
+main:
+  - name: "الرئيسية"
+    url: "/"
+    icon: "fas fa-home"
+    
+  - name: "المدونة"
+    url: "/blog/"
+    icon: "fas fa-newspaper"
+    
+  - name: "الأدوات"
+    url: "/tools/"
+    icon: "fas fa-tools"
+    dropdown:
+      - name: "منشئ روابط SEO"
+        url: "/tools/seo-url/"
+      - name: "مولد الصور المصغرة"
+        url: "/tools/thumbnail-generator/"
+    
+  - name: "من نحن"
+    url: "/about/"
+    icon: "fas fa-info-circle"
