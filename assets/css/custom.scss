@@ -1,8 +1,6 @@
 ---
-# هذا التعليق YAML ضروري ليعمل مع Jekyll
+# هذا التعليق YAML ضروري
 ---
 
-@use "sass:meta";
-
-// استيراد التخصيصات
-@use "../_sass/chirpy/fonts";
+// استيراد الملف المخصص
+@import "custom/fonts";
