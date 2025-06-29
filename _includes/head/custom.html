@@ -1,10 +1,2 @@
-<nav class="custom-navbar">
-  <ul>
-    {% assign sorted_tabs = site.tabs | sort: 'order' %}
-    {% for tab in sorted_tabs %}
-      <li class="{% if page.url == tab.url %}active{% endif %}">
-        <a href="{{ tab.url | relative_url }}">{{ tab.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+<!-- خط عربي من Google Fonts أو أي مصدر خارجي -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
