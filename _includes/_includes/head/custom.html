@@ -1,0 +1,10 @@
+<nav class="custom-navbar">
+  <ul>
+    {% assign sorted_tabs = site.tabs | sort: 'order' %}
+    {% for tab in sorted_tabs %}
+      <li class="{% if page.url == tab.url %}active{% endif %}">
+        <a href="{{ tab.url | relative_url }}">{{ tab.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
