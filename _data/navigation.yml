@@ -1,2 +1,9 @@
-- name: "أداة SEO"
-  url: "/tools/seo-url/"
+- name: "الرئيسية"
+  url: "/"
+  
+- name: "أدوات SEO"
+  url: "/tools/seo-url/"  # المسار الصحيح
+  icon: "fas fa-link"     # أيقونة اختيارية
+
+- name: "المدونة"
+  url: "/blog/"
