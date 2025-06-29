@@ -1,46 +1,77 @@
-<!-- The trending tags list -->
+<!-- The Top Bar -->
 
-{% assign MAX = 10 %}
+<header dir={{ site.direction | default: ltr }} id="topbar-wrapper" aria-label="Top Bar">
+  <div
+    id="topbar"
+    class="d-flex align-items-center justify-content-between px-lg-3 h-100"
+  >
+    <nav id="breadcrumb" aria-label="Breadcrumb">
+      {% assign paths = page.url | split: '/' %}
 
-{% assign size_list = '' | split: '' %}
-{% assign tag_list = '' | split: '' %}
+      {% if paths.size == 0 or page.layout == 'home' %}
+        <!-- index page -->
+        <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
 
-{% for tag in site.tags %}
-  {% assign size = tag | last | size %}
-  {% assign size_list = size_list | push: size %}
+      {% else %}
+        {% for item in paths %}
+          {% if forloop.first %}
+            <span>
+              <a href="{{ '/' | relative_url }}">
+                {{- site.data.locales[include.lang].tabs.home | capitalize -}}
+              </a>
+            </span>
 
-  {% assign tag_str = tag | first | append: '::' | append: size %}
-  {% assign tag_list = tag_list | push: tag_str %}
-{% endfor %}
+          {% elsif forloop.last %}
+            {% if page.collection == 'tabs' %}
+              <span>{{ site.data.locales[include.lang].tabs[item] | default: page.title }}</span>
+            {% else %}
+              <span>{{ page.title }}</span>
+            {% endif %}
 
-{% assign size_list = size_list | sort | reverse %}
+          {% elsif page.layout == 'category' or page.layout == 'tag' %}
+            <span>
+              <a href="{{ item | append: '/' | relative_url }}">
+                {{- site.data.locales[include.lang].tabs[item] | default: page.title -}}
+              </a>
+            </span>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </nav>
+    <!-- endof #breadcrumb -->
 
-{% assign tag_list = tag_list | sort_natural %}
+    <button type="button" id="sidebar-trigger" class="btn btn-link">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
 
-{% assign trending_tags = '' | split: '' %}
-
-{% for size in size_list limit: MAX %}
-  {% for tag_str in tag_list %}
-    {% assign tag = tag_str | split: '::' %}
-    {% assign tag_name = tag | first %}
-    {% assign tag_size = tag | last | plus: 0 %}
-    {% if tag_size == size %}
-      {% unless trending_tags contains tag_name %}
-        {% assign trending_tags = trending_tags | push: tag_name %}
-        {% break %}
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% if trending_tags.size > 0 %}
-  <section dir={{ site.direction | default: ltr }}>
-    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.trending_tags -}}</h2>
-    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
-      {% for tag_name in trending_tags %}
-        {% assign url = tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
-        <a class="post-tag btn btn-outline-primary" href="{{ url | relative_url }}">{{ tag_name }}</a>
-      {% endfor %}
+    <div id="topbar-title">
+      {% if page.layout == 'home' %}
+        {{- site.data.locales[include.lang].title | default: site.title -}}
+      {% elsif page.collection == 'tabs' or page.layout == 'page' %}
+        {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
+        {{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}
+      {% else %}
+        {{- site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize -}}
+      {% endif %}
     </div>
-  </section>
-{% endif %}
+
+    <button type="button" id="search-trigger" class="btn btn-link">
+      <i class="fas fa-search fa-fw"></i>
+    </button>
+
+    <search id="search" class="align-items-center ms-3 ms-lg-0">
+      <i class="fas fa-search fa-fw"></i>
+      <input
+        class="form-control"
+        id="search-input"
+        type="search"
+        aria-label="search"
+        autocomplete="off"
+        placeholder="{{ site.data.locales[include.lang].search.hint | capitalize }}..."
+      >
+    </search>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">
+      {{- site.data.locales[include.lang].search.cancel -}}
+    </button>
+  </div>
+</header>
