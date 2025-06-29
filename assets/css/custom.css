@@ -1,3 +1,13 @@
+:root {
+    --card-bg: #ffffff;
+    --link-color: #0866ff;
+    --border-color: #e1e1e1;
+    --content-bg: #f9f9f9;
+    --text-color: #333333;
+    --button-bg: #0866ff;
+    --button-hover: #0654d1;
+}
+
 /* أداة إنشاء روابط SEO */
 .url-generator-container {
     max-width: 800px;
