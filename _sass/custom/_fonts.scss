@@ -1,0 +1,20 @@
+// 1. استيراد خط Cairo مع دعم العربية
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap&subset=arabic');
+
+// 2. تغيير المتغيرات الأساسية للخطوط
+$font-family-base: "Cairo", sans-serif !default;
+$font-family-heading: "Cairo", sans-serif !default;
+
+// 3. تطبيق الخط على العناصر الرئيسية
+:root {
+  --font-family-sans-serif: #{$font-family-base};
+  --font-family-monospace: #{$font-family-base};
+}
+
+body {
+  font-family: $font-family-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+}
