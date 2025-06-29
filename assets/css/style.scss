@@ -1,40 +1,7 @@
-.custom-navbar {
-  background-color: var(--main-bg);
-  border-bottom: 1px solid var(--border-color);
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    a {
-      text-decoration: none;
-      color: var(--text-color);
-      font-weight: 600;
-      padding: 0.25rem 0.75rem;
-      border-radius: 8px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-
-      &:hover {
-        background-color: var(--hover-bg);
-        color: var(--accent-color);
-      }
-    }
-
-    &.active a {
-      background-color: var(--accent-color);
-      color: #fff;
-    }
-  }
+body,
+html,
+input,
+textarea,
+button {
+  font-family: 'Cairo', sans-serif;
 }
