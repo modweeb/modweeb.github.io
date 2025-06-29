@@ -30,12 +30,11 @@ twitter:
 social:
   name: Modweeb | مود ويب
   email: contact@modweeb.com
-  email: contact@modweeb.com
   links:
     - https://twitter.com/modweeb
     - https://github.com/modweeb
-    - https://www.facebook.com/modweeb
-    - https://www.linkedin.com/in/modweeb
+    - https://modweeb.com
+    - https://t.me/modweeb
 
 # Site Verification Settings
 webmaster_verifications:
@@ -178,3 +177,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    
