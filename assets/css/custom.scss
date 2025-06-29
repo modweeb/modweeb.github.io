@@ -1,23 +1,26 @@
-/* استيراد الخط من Google Fonts */
+/* Cairo Font */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
-/* تطبيق الخط الجديد على جميع العناصر */
-*,
+/* إجبار كل العناصر على استخدام الخط */
+:root {
+  --base-font-family: 'Cairo', sans-serif !important;
+}
+
 body,
 html,
 input,
 textarea,
 button,
 select,
-code,
-pre,
+.post-content,
+.sidebar,
+footer,
+header,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-.sidebar,
-.post-content {
+h6 {
   font-family: 'Cairo', sans-serif !important;
 }
