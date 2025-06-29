@@ -158,6 +158,8 @@ defaults:
 
 sass:
   style: compressed
+  load_paths:
+    - _sass/custom  # أضف هذا السطر
 
 compress_html:
   clippings: all
@@ -187,4 +189,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-    
