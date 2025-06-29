@@ -1,14 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+/* استيراد الخط من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
-/* تطبيق الخط الجديد */
-:root {
-  --base-font-family: 'Tajawal', sans-serif;
-}
-
+/* تطبيق الخط الجديد على جميع العناصر */
+*,
 body,
+html,
 input,
 textarea,
 button,
-select {
-  font-family: var(--base-font-family) !important;
+select,
+code,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.sidebar,
+.post-content {
+  font-family: 'Cairo', sans-serif !important;
 }
